@@ -1,5 +1,6 @@
 <?php
 include "view/template/header.php";
+
 ?>
 
 <?php echo $message; ?>
