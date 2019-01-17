@@ -1,8 +1,7 @@
 <?php
 
 	include "template/header.php";
-	?>
-
+?>
 	 <div class="container">
       <table class="table table-hover">
         <thead class="thead-light">
@@ -17,17 +16,16 @@
 
         //récupère toutes les entrées de la table Account
         //affiche les données sur chaque entrée dans le tableau
-          foreach ($accounts as $key => $value) { 
-          	var_dump($value);
+          foreach ($accounts as $key => $value) {
          ?>
         <tbody>
           <tr>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getId(); ?></td>
-            <td class="d-none d-md-table-cell text-center"><?php ?></td>
-            <td class="d-none d-md-table-cell text-center"><?php ?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $value->getId(); ?> </td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $value->setAccountName(); ?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $value->setBalance();?></td>
             <td>
               <div>
-                <a <?php setHref('') ?> class='btn btn-primary btn-xs text-center <?php ?> ' > Supprimer</a>
+                <a <?php setHref('delAccount') ?> class='btn btn-primary btn-xs text-center ' > Supprimer</a>
               </div>
             </td>
           </tr>
@@ -37,7 +35,7 @@
         </tbody>
       </table>
     </div>
-<?php
+
 
 	include "template/footer.php";
 

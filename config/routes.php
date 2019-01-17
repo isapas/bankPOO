@@ -14,19 +14,28 @@
 //]
 function getRoutes() {
   return [
+
     "" => [
       "exemple",
       "welcome",
     ],
-    "login" => [
-      "admin",
-      "loginUser",
-    ],
-    "listaccount" =>[
+
+
+    // "login" => [
+    //   "admin",
+    //   "loginUser"
+    // ],
+
+    "listAccount" => [
     "account",
     "showAccount",
-  ], 
-  
+  ],
+
+    "addAccount" => [
+    "account",
+    "addAccount"
+    ]
+
   ];
 }
 

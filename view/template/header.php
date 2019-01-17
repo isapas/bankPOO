@@ -19,16 +19,20 @@
     <nav class="bg-danger">
       <ul class="nav mb-5 container">
         <li class="nav-item">
-          <a class="nav-link text-white" <?php setHref("") ?>>accueil</a>
+          <a class="nav-link text-white" <?php setHref("") ?>>Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" <?php setHref("accueil") ?>>Ajout compte</a>
+          <a class="nav-link text-white" <?php setHref("addAccount") ?>>Ajout compte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" <?php setHref("message") ?>>Dépot</a>
+          <a class="nav-link text-white" <?php setHref("deposit") ?>>Dépot</a>
         </li>
-          <a class="nav-link text-white" <?php setHref("logout") ?>>Virement</a>
-
+        <li class="nav-item">
+          <a class="nav-link text-white" <?php setHref("transfer") ?>>Virement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" <?php setHref("withdrawal") ?>>Retrait</a>
+        </li>
       </ul>
     </nav>
 
