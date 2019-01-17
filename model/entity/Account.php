@@ -8,7 +8,7 @@
 
 
 
-		public function setAccountName(string $accountName) {
+		public function setAccountName( $accountName) {
 			$this->accountName = $accountName;
 		}
 		public function setBalance(int $balance) {
@@ -18,10 +18,10 @@
 		//dans le manager?
 
 		public function getAccountName() {
-			$this->accountName;
+			return $this->accountName;
 		}
 		public function getBalance() {
-			$this->balance;
+			return $this->balance;
 		}
 
 
