@@ -28,7 +28,7 @@ function __construct()
 {
 	$this->setDb(dataBase::BD());
 }
-}
+
 
 
 
