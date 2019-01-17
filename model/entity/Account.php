@@ -1,15 +1,13 @@
 <?php 
 
-	class Account extends entity 
+	class account extends entity 
 	{
 		protected $id;
 		protected $accountName;
 		protected $balance;
 
 
-		public function setId(int $id) {
-			$this->id =$id;
-		}
+
 		public function setAccountName(string $accountName) {
 			$this->accountName = $accountName;
 		}
@@ -18,9 +16,7 @@
 		}
 
 		//dans le manager?
-		public function getId() {
-			$this->id;
-		}
+	
 		public function getAccountName() {
 			$this->accountName;
 		}
