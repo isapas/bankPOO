@@ -1,6 +1,6 @@
 <?php
 
-	require "template/header.php";
-	require "template/footer.php";
+	include "template/header.php";
+	include "template/footer.php";
 
  ?>
