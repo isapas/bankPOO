@@ -1,8 +1,8 @@
-<?php 
+<?php
 
-	class account extends entity 
+	class Account extends entity
 	{
-		protected $id;
+		// protected $id;
 		protected $accountName;
 		protected $balance;
 
@@ -16,16 +16,16 @@
 		}
 
 		//dans le manager?
-	
+
 		public function getAccountName() {
 			$this->accountName;
 		}
 		public function getBalance() {
 			$this->balance;
 		}
-		
 
-		
+
+
 		public function __construct(array $data = NULL) {
 			if($data) {
 				$this->hydrate($data);

@@ -1,6 +1,6 @@
 </main>
 <footer class="jumbotron jumbotron-fluid mb-0">
-  <div class="container">
+  <div class="container d-flex justify-content-center">
     <p>La banque d'un monde qui stagne </p>
   </div>
 </footer>
