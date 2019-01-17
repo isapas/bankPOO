@@ -1,8 +1,7 @@
 <?php 
 
-	class account extends entity 
+	class Account extends entity 
 	{
-		protected $id;
 		protected $accountName;
 		protected $balance;
 

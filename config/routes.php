@@ -22,10 +22,11 @@ function getRoutes() {
       "admin",
       "loginUser",
     ],
-    "account" =>[
+    "listaccount" =>[
     "account",
     "showAccount",
-  ]
+  ], 
+  
   ];
 }
 
