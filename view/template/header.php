@@ -10,8 +10,26 @@
     <title></title>
   </head>
   <body>
-	<header>
-	blabla
-  
-	</header>
-	<main>
+    <header class="jumbotron jumbotron-fluid mb-0">
+      <div class="container">
+        <h1 class="display-4 d-flex justify-content-center">Une banque, de l'argent</h1>
+        <p class="lead d-flex justify-content-center">Solution de gestion de comptes</p>
+      </div>
+    </header>
+    <nav class="bg-danger">
+      <ul class="nav mb-5 container">
+        <li class="nav-item">
+          <a class="nav-link text-white" <?php setHref("") ?>>accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" <?php setHref("accueil") ?>>Ajout compte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" <?php setHref("message") ?>>Dépot</a>
+        </li>
+          <a class="nav-link text-white" <?php setHref("logout") ?>>Virement</a>
+          
+      </ul>
+    </nav>
+
+    <main class="container">
