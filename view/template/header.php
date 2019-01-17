@@ -22,7 +22,7 @@
           <a class="nav-link text-white" <?php setHref("") ?>>Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" <?php setHref("add") ?>>Ajout compte</a>
+          <a class="nav-link text-white" <?php setHref("addAccount") ?>>Ajout compte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" <?php setHref("deposit") ?>>Dépot</a>
