@@ -28,9 +28,7 @@
           <a class="nav-link text-white" <?php setHref("message") ?>>Dépot</a>
         </li>
           <a class="nav-link text-white" <?php setHref("logout") ?>>Virement</a>
-          <?php
 
-         ?>
       </ul>
     </nav>
 

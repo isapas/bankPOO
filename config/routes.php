@@ -16,12 +16,16 @@ function getRoutes() {
   return [
     "" => [
       "exemple",
-      "welcome"
+      "welcome",
     ],
     "login" => [
       "admin",
       "loginUser",
-    ]
+    ],
+    "account" =>[
+    "account",
+    "showAccount",
+  ]
   ];
 }
 
