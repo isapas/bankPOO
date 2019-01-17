@@ -1,4 +1,9 @@
-
+</main>
+<footer class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <p>La banque d'un monde qui stagne </p>
+  </div>
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
