@@ -14,7 +14,6 @@
 			return $data;
 		}
 
-		$accountManager = new accountManager();
 
 		//Fonction pour ajouter un compte, elle attend explicitement un objet compte et non pas un tableau
 		public function addAccount(Account $account) {
@@ -24,7 +23,7 @@
 				"balance" => $account->getBalance()
 			]);
 			return $result;
-			var_dump($account);
+			// var_dump($account);
 		}
 	}
 

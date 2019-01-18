@@ -1,5 +1,5 @@
 <?php
-	include "template/header.php";
+include "template/header.php";
 
 
 ?>
@@ -10,6 +10,9 @@
             <th scope="col-2" class="d-none d-md-table-cell text-center">Id</th>
             <th scope="col-2" class="d-none d-md-table-cell text-center">Nom du compte</th>
             <th scope="col-2" class="d-none d-md-table-cell text-center">Solde</th>
+						<th scope="col-2" class="d-none d-md-table-cell text-center">Dépot</th>
+						<th scope="col-2" class="d-none d-md-table-cell text-center">Virement</th>
+						<th scope="col-2" class="d-none d-md-table-cell text-center">Retrait</th>
             <th scope="col-2" >Supprimer le compte</th>
           </tr>
         </thead>
@@ -25,9 +28,24 @@
             <td class="d-none d-md-table-cell text-center"><?php echo $value->getId(); ?> </td>
             <td class="d-none d-md-table-cell text-center"><?php echo $value->getAccountName(); ?></td>
             <td class="d-none d-md-table-cell text-center"><?php echo $value->getBalance();?></td>
+						<td>
+              <div>
+                <a <?php setHref('deposit') ?> <i class="fas fa-plus-circle ml-5"></i> Dépot</a>
+              </div>
+            </td>
+						<td>
+              <div>
+                <a <?php setHref('transfer') ?> <i class="fas fa-exchange-alt ml-5"></i> Virement</a>
+              </div>
+            </td>
+						<td>
+              <div>
+                <a <?php setHref('withdrawal') ?> <i class="fas fa-minus-circle ml-4"></i> Retrait</a>
+              </div>
+            </td>
             <td>
               <div>
-                <a <?php setHref('delAccount') ?> class='btn btn-primary btn-xs text-center ' > Supprimer</a>
+                <a <?php setHref('delAccount') ?> <i class="far fa-trash-alt text-danger ml-5"></i> Supprimer</a>
               </div>
             </td>
           </tr>
@@ -39,6 +57,6 @@
     </div>
 <?php
 
-	include "template/footer.php";
+include "template/footer.php";
 
  ?>
