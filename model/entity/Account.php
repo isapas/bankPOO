@@ -6,25 +6,19 @@
 		protected $accountName;
 		protected $balance;
 
-
-
-		public function setAccountName(string $accountName) {
+		public function setAccountName( $accountName) {
 			$this->accountName = $accountName;
 		}
 		public function setBalance(int $balance) {
 			$this->balance = $balance;
 		}
 
-		//dans le manager?
-
 		public function getAccountName() {
-			$this->accountName;
+			return $this->accountName;
 		}
 		public function getBalance() {
-			$this->balance;
+			return $this->balance;
 		}
-
-
 
 		public function __construct(array $data = NULL) {
 			if($data) {

@@ -6,7 +6,7 @@ class accountController {
 		$accountManager = new accountManager();
 		//récupère un tableau pour instancier les objets chats qui seront affichés dans la vue
 		$accounts = $accountManager->getAccounts();
-		var_dump($accounts);
+
 	require "view/accountView.php";
 	}	
 }
