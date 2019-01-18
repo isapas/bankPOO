@@ -20,16 +20,11 @@ function getRoutes() {
       "showAccount",
     ],
 
-
-    // "login" => [
-    //   "admin",
-    //   "loginUser"
-    // ],
-
-  //   "listAccount" => [
-  //   "account",
-  //   "showAccount",
-  // ],
+    "delAccount" => [
+      "account",
+      "delAccount",
+      ['id'=> ["integer"]]
+   ],
 
     "addAccount" => [
     "account",
