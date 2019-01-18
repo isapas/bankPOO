@@ -25,14 +25,14 @@ function getRoutes() {
     //   "loginUser"
     // ],
 
-    "listaccount" => [
+    "listAccount" => [
     "account",
     "showAccount"
   ],
 
     "addAccount" => [
     "account",
-    "addAccount"
+    "addForm"
     ]
   ];
 }
