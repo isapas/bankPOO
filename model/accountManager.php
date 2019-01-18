@@ -7,12 +7,10 @@
 			$data = $query->fetchAll(PDO::FETCH_CLASS, "Account");
 			/*$data = $query->fetchall(PDO::FETCH_ASSOC);
 				foreach($data as $key => $account) {
-					$data[$key] = new Account($account);}*/
-		$query->closeCursor();
-				
-
-			return $data;
+					$data[$key] = new Account($account);*/
+					$query->closeCursor();
+					return $data;
+			}
 		}
-	}
 
  ?>

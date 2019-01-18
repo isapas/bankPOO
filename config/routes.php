@@ -20,20 +20,22 @@ function getRoutes() {
       "welcome",
     ],
 
+
     // "login" => [
     //   "admin",
     //   "loginUser"
     // ],
 
-    "listaccount" => [
+    "listAccount" => [
     "account",
-    "showAccount"
+    "showAccount",
   ],
 
     "addAccount" => [
     "account",
     "addAccount"
     ]
+
   ];
 }
 
