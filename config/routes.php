@@ -20,6 +20,12 @@ function getRoutes() {
       "showAccount",
     ],
 
+    "delAccount" => [
+      "account",
+      "delAccount",
+      ['id'=> ["integer"]]
+   ],
+
     "addAccount" => [
       "account",
       "addForm"

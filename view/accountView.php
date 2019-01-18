@@ -45,7 +45,7 @@ include "template/header.php";
             </td>
             <td>
               <div>
-                <a <?php setHref('delAccount') ?> <i class="far fa-trash-alt text-danger ml-5"></i> Supprimer</a>
+                <a <?php setHref('delAccount', ['id' => $account->getId()]) ?> <i class="far fa-trash-alt text-danger ml-5"></i> Supprimer</a>
               </div>
             </td>
           </tr>

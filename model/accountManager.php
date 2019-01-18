@@ -36,6 +36,7 @@
 			return $result;
 			// var_dump($account);
 		}
+<<<<<<< HEAD
 
 		//Fonction pour updater un compte
 		public function updateAccount(Account $account) {
@@ -53,6 +54,13 @@
 
 
 
+		public function delAccountById($id) {
+			$query = $this->getDb()->prepare('DELETE FROM Account WHERE id = ?');
+			$result = $query->execute(array($id));
+			return $result;
+		}
+
+		
 	}
 
 
