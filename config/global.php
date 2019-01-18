@@ -5,7 +5,7 @@ function getGlobalConfig() {
     "protocol" => "",
     "host" => "localhost/Lab/microFrameworkObjet/",
     "status" => ["anonymous", "user", "admin"],
-    "defaultRoute" => "listAccount"
+    "defaultRoute" => ""
   ];
 }
 

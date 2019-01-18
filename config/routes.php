@@ -16,8 +16,8 @@ function getRoutes() {
   return [
 
     "" => [
-      "exemple",
-      "welcome",
+      "account",
+      "showAccount",
     ],
 
 

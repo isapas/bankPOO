@@ -1,10 +1,7 @@
 <?php
-	require "template/header.php";
-
-<<<<<<< HEAD
-	require "template/footer.php";
-=======
 	include "template/header.php";
+
+
 ?>
 	 <div class="container">
       <table class="table table-hover">
@@ -43,6 +40,5 @@
 <?php
 
 	include "template/footer.php";
->>>>>>> master
 
  ?>
