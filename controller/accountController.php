@@ -14,6 +14,8 @@ class accountController {
 	//On vérifie qu'un formulaire a été soumis
 	require "view/form/addAccountForm.php";
 	if(!empty($_POST)) {
+		//instancie le manager qui permet de egérer la table
+		$accountManager = new accountManager();
   //On instancie un objet compte avec les données du formulaire
   $account = new Account($_POST);
   //On ajoute l'objet compte en base de données
