@@ -1,7 +1,10 @@
 <?php
 	include "template/header.php";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc28d8e5a3f7711d8c94565c9a17f93c1d1d2543
 ?>
 	 <div class="container">
       <table class="table table-hover">
