@@ -8,9 +8,19 @@
 			/*$data = $query->fetchall(PDO::FETCH_ASSOC);
 				foreach($data as $key => $account) {
 					$data[$key] = new Account($account);}*/
-		$query->closeCursor();
+			$query->closeCursor();
+			return $data;
+		}
 
-
+		public function getAccount($id) {
+			$query = $this->getDb()->prepare('SELECT * FROM Account WHERE id = ?');
+			$query->execute([$id]);
+			$query->setFetchMode(PDO::FETCH_CLASS, "Account");
+			$data = $query->fetch();
+			/*$data = $query->fetchall(PDO::FETCH_ASSOC);
+				foreach($data as $key => $account) {
+					$data[$key] = new Account($account);}*/
+			$query->closeCursor();
 			return $data;
 		}
 
@@ -22,9 +32,27 @@
 				"accountName" => $account->getAccountName(),
 				"balance" => $account->getBalance()
 			]);
+			$query->closeCursor();
 			return $result;
 			// var_dump($account);
 		}
+
+		//Fonction pour updater un compte
+		public function updateAccount(Account $account) {
+			$query = $this->getDb()->prepare("UPDATE Account SET accountName =:accountName, balance = :balance WHERE id = :id");
+			$result = $query->execute([
+				"accountName" => $account->getAccountName(),
+				"balance" => $account->getBalance(),
+				"id" => $account->getId()
+			]);
+			$query->closeCursor();
+			return $result;
+		}
+
+
+
+
+
 	}
 
 

@@ -20,25 +20,30 @@ function getRoutes() {
       "showAccount",
     ],
 
-
-    // "login" => [
-    //   "admin",
-    //   "loginUser"
-    // ],
-
-  //   "listAccount" => [
-  //   "account",
-  //   "showAccount",
-  // ],
-
     "addAccount" => [
-    "account",
-    "addForm"
+      "account",
+      "addForm"
     ],
 
     "transfer" => [
-    "account",
-    ""
+      "account",
+      ""
+    ],
+
+    "deposit" => [
+      "account",
+      "makeDeposit",
+      [
+        "id" => ["integer"]
+      ]
+    ],
+
+    "withdrawal" => [
+      "account",
+      "makeWithdrawal",
+      [
+        "id" => ["integer"]
+      ]
     ]
 
 

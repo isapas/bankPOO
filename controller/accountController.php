@@ -7,20 +7,41 @@ class accountController {
 		//récupère un tableau pour instancier les objets chats qui seront affichés dans la vue
 		$accounts = $accountManager->getAccounts();
 
-	require "view/accountView.php";
+		require "view/accountView.php";
 	}
 
 	public function addForm() {
-	//On vérifie qu'un formulaire a été soumis
-	require "view/form/addAccountForm.php";
-	if(!empty($_POST)) {
-	//instancie le manager qui permet de egérer la table
-	$accountManager = new accountManager();
-  //On instancie un objet compte avec les données du formulaire
-  $account = new Account($_POST);
-  //On ajoute l'objet compte en base de données
-  $accountManager->addAccount($account);
+		//On vérifie qu'un formulaire a été soumis
+
+		if(!empty($_POST)) {
+			//instancie le manager qui permet de egérer la table
+			$accountManager = new accountManager();
+		  //On instancie un objet compte avec les données du formulaire
+		  $account = new Account($_POST);
+		  //On ajoute l'objet compte en base de données
+		  $accountManager->addAccount($account);
+		}
+		require "view/form/addAccountForm.php";
 	}
+
+	public function makeDeposit() {
+			$accountManager = new accountManager();
+			$account = $accountManager->getAccount($_GET["id"]);
+			if (!empty($_POST)) {
+				$account->deposit($_POST["amount"]);
+				$accountManager->updateAccount($account);
+				var_dump($account);
+				// redirectTo("");
+			}
+
+
+		require "view/form/depositForm.php";
+	}
+
+	public function makeWithdrawal() {
+			$accountManager = new accountManager();
+			$account = $accountManager->getAccount($_GET["id"]);
+		require "view/form/withdrawalForm.php";
 	}
 }
 

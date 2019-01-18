@@ -20,17 +20,17 @@ include "template/header.php";
 
         //récupère toutes les entrées de la table Account
         //affiche les données sur chaque entrée dans le tableau
-          foreach ($accounts as $key => $value) {
+          foreach ($accounts as $key => $account) {
 
          ?>
         <tbody>
           <tr>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getId(); ?> </td>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getAccountName(); ?></td>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getBalance();?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getId(); ?> </td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getAccountName(); ?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getBalance();?></td>
 						<td>
               <div>
-                <a <?php setHref('deposit') ?> <i class="fas fa-plus-circle ml-5"></i> Dépot</a>
+                <a <?php setHref('deposit', ["id"=>$account->getId()]) ?> <i class="fas fa-plus-circle ml-5"></i> Dépot</a>
               </div>
             </td>
 						<td>
@@ -40,7 +40,7 @@ include "template/header.php";
             </td>
 						<td>
               <div>
-                <a <?php setHref('withdrawal') ?> <i class="fas fa-minus-circle ml-4"></i> Retrait</a>
+                <a <?php setHref('withdrawal', ["id"=>$account->getId()]) ?> <i class="fas fa-minus-circle ml-4"></i> Retrait</a>
               </div>
             </td>
             <td>
