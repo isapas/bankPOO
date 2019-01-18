@@ -33,7 +33,7 @@ function getRoutes() {
 
     "addAccount" => [
     "account",
-    "addAccount"
+    "addForm"
     ]
 
   ];

@@ -1,5 +1,9 @@
 <?php
+	require "template/header.php";
 
+<<<<<<< HEAD
+	require "template/footer.php";
+=======
 	include "template/header.php";
 ?>
 	 <div class="container">
@@ -39,5 +43,6 @@
 <?php
 
 	include "template/footer.php";
+>>>>>>> master
 
  ?>
