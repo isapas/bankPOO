@@ -19,7 +19,7 @@
     <nav class="bg-danger">
       <ul class="nav mb-5 container">
         <li class="nav-item">
-          <a class="nav-link text-white" <?php setHref("listAccount") ?>>Accueil</a>
+          <a class="nav-link text-white" <?php setHref("") ?>>Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" <?php setHref("addAccount") ?>>Ajout compte</a>
