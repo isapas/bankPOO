@@ -20,14 +20,14 @@ include "template/header.php";
 
         //récupère toutes les entrées de la table Account
         //affiche les données sur chaque entrée dans le tableau
-          foreach ($accounts as $key => $value) {
+          foreach ($accounts as $key => $account) {
 
          ?>
         <tbody>
           <tr>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getId(); ?> </td>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getAccountName(); ?></td>
-            <td class="d-none d-md-table-cell text-center"><?php echo $value->getBalance();?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getId(); ?> </td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getAccountName(); ?></td>
+            <td class="d-none d-md-table-cell text-center"><?php echo $account->getBalance();?></td>
 						<td>
               <div>
                 <a <?php setHref('deposit') ?> <i class="fas fa-plus-circle ml-5"></i> Dépot</a>
@@ -45,7 +45,7 @@ include "template/header.php";
             </td>
             <td>
               <div>
-                <a <?php setHref('delAccount') ?> <i class="far fa-trash-alt text-danger ml-5"></i> Supprimer</a>
+                <a <?php setHref('delAccount', ['id' => $account->getId()]) ?> <i class="far fa-trash-alt text-danger ml-5"></i> Supprimer</a>
               </div>
             </td>
           </tr>

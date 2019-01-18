@@ -8,9 +8,7 @@
 			/*$data = $query->fetchall(PDO::FETCH_ASSOC);
 				foreach($data as $key => $account) {
 					$data[$key] = new Account($account);}*/
-		$query->closeCursor();
-
-
+			$query->closeCursor();
 			return $data;
 		}
 
@@ -24,6 +22,11 @@
 			]);
 			return $result;
 			// var_dump($account);
+		}
+		public function delAccountById($id) {
+			$query = $this->getDb()->prepare('DELETE FROM Account WHERE id = ?');
+			$result = $query->execute(array($id));
+			return $result;
 		}
 	}
 
