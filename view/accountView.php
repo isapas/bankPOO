@@ -16,7 +16,8 @@
 
         //récupère toutes les entrées de la table Account
         //affiche les données sur chaque entrée dans le tableau
-          foreach ($accounts as $key => $value) { var_dump($accounts);
+          foreach ($accounts as $key => $value) {
+
          ?>
         <tbody>
           <tr>
