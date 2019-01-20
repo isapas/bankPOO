@@ -27,6 +27,37 @@ class accountController {
 		$accountManager->delAccountById($_GET['id']);
 		redirectTo("");
 	}
+
+	public function makeDeposit() {
+			$accountManager = new accountManager();
+			$account = $accountManager->getAccount($_GET["id"]);
+			if (!empty($_POST)) {
+				$account->deposit($_POST["amount"]);
+				$accountManager->updateAccount($account);
+				//var_dump($account);
+				redirectTo("");
+			}
+		require "view/form/depositForm.php";
+	}
+
+	public function makeWithdrawal() {
+			$accountManager = new accountManager();
+			$account = $accountManager->getAccount($_GET["id"]);
+			if (!empty($_POST)) {
+				$account->withdrawal($_POST["amount"]);
+				$accountManager->updateAccount($account);
+				//var_dump($account);
+				redirectTo("");
+			}
+		require "view/form/withdrawalForm.php";
+	}
+		public function makeTransfer () {
+			$accountManager = new accountManager();
+			$account = $accountManager->getAccount($_GET["id"]);
+
+		}
+
+
 }
 
 ?>
