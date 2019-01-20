@@ -25,6 +25,17 @@
 			$this->setBalance($newBalance);
 		}
 
+		public function withdrawal(int $amount) {
+			$newBalance = $this->getBalance() - $amount;
+			$this->setBalance($newBalance);
+		}
+
+		/*public function transfer(int $amount) {
+			$newBalance = $this->getBalance() + $amount;
+			$this->setBalance($newBalance);
+		}*/
+
+
 		public function getNewBalance() {
 			return $this->$newBalance;
 		}
