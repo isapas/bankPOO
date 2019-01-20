@@ -1,5 +1,5 @@
-<?php
 
+<?php
 class accountController {
 	public function showAccount() {
 		//instancie le manager qui permet de gérer la table
@@ -8,7 +8,6 @@ class accountController {
 		$accounts = $accountManager->getAccounts();
 		require "view/accountView.php";
 	}
-
 	public function addForm() {
 		//On vérifie qu'un formulaire a été soumis
 		if(!empty($_POST)) {
@@ -31,3 +30,4 @@ class accountController {
 }
 
 ?>
+

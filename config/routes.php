@@ -1,7 +1,5 @@
 <?php
-
 //Function qui retourne un tableau contenant les routes de notre application
-
 //Modèle des routes
 //"NomDeLaRoute" => [
 //  "Controller",
@@ -14,31 +12,23 @@
 //]
 function getRoutes() {
   return [
-
     "" => [
       "account",
       "showAccount",
     ],
-
     "delAccount" => [
       "account",
       "delAccount",
       ['id'=> ["integer"]]
    ],
-
     "addAccount" => [
     "account",
     "addForm"
     ],
-
     "transfer" => [
     "account",
     ""
     ]
-
-
-
   ];
 }
-
  ?>
