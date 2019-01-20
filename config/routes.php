@@ -27,13 +27,29 @@ function getRoutes() {
    ],
 
     "addAccount" => [
-    "account",
-    "addForm"
+      "account",
+      "addForm"
     ],
 
     "transfer" => [
-    "account",
-    ""
+      "account",
+      ""
+    ],
+
+    "deposit" => [
+      "account",
+      "makeDeposit",
+      [
+        "id" => ["integer"]
+      ]
+    ],
+
+    "withdrawal" => [
+      "account",
+      "makeWithdrawal",
+      [
+        "id" => ["integer"]
+      ]
     ]
 
 

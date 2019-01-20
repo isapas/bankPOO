@@ -20,6 +20,15 @@
 			return $this->balance;
 		}
 
+		public function deposit(int $amount) {
+			$newBalance = $this->getBalance() + $amount;
+			$this->setBalance($newBalance);
+		}
+
+		public function getNewBalance() {
+			return $this->$newBalance;
+		}
+
 		public function __construct(array $data = NULL) {
 			if($data) {
 				$this->hydrate($data);

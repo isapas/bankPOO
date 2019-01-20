@@ -1,5 +1,5 @@
 <?php
-require "view/template/header.php";
+include "view/template/header.php";
 ?>
 
 
@@ -18,5 +18,5 @@ require "view/template/header.php";
 
 
 <?php
-require "view/template/footer.php";
+include "view/template/footer.php";
  ?>
