@@ -20,29 +20,38 @@ function getRoutes() {
       "showAccount",
     ],
 
-
-    // "login" => [
-    //   "admin",
-    //   "loginUser"
-    // ],
-
-  "delAccount" => [
-     "account",
-     "delAccount",
+    "delAccount" => [
+      "account",
+      "delAccount",
+      ['id'=> ["integer"]]
    ],
 
     "addAccount" => [
-    "account",
-    "addForm"
+      "account",
+      "addForm"
     ],
 
     "transfer" => [
-    "account",
-    ""
+      "account",
+      ""
+    ],
+
+    "deposit" => [
+      "account",
+      "makeDeposit",
+      [
+        "id" => ["integer"]
+      ]
+    ],
+
+    "withdrawal" => [
+      "account",
+      "makeWithdrawal",
+      [
+        "id" => ["integer"]
+      ]
     ]
-
-
-
+    
   ];
 }
 
