@@ -26,10 +26,10 @@ function getRoutes() {
     //   "loginUser"
     // ],
 
-  //   "listAccount" => [
-  //   "account",
-  //   "showAccount",
-  // ],
+  "delAccount" => [
+     "account",
+     "delAccount",
+   ],
 
     "addAccount" => [
     "account",
